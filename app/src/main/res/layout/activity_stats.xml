@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsActivity"
+    android:background="@color/colorBlack"
+    android:columnCount="2"
+    android:rowCount="3">
+
+    <TextView
+        android:id="@+id/stat_armes_legeres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/stat_armes_legeres"
+        android:textColor="@color/colorYellow"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/result_armes_legeres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/colorYellow"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/stat_chars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/stat_chars"
+        android:textColor="@color/colorYellow"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/result_chars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/colorYellow"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/stat_avions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/stat_avions"
+        android:textColor="@color/colorYellow" />
+
+    <TextView
+        android:id="@+id/result_avions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/colorYellow"
+        android:layout_marginTop="20dp"/>
+
+</android.widget.GridLayout>

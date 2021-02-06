@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quizz Amnesty</string>
+    <string name="logo_description">Logo Amnesty</string>
+    <string name="first_question">Quels est aujourd\'hui le type d\'armes le plus meurtrier ?</string>
+    <string name="arme_legere">Les armes légères</string>
+    <string name="chars">Chars</string>
+    <string name="avions">Avions</string>
+    <string name="submit">Valider</string>
+    <string name="quizz">Faire le quizz</string>
+    <string name="stats">Voir les stats</string>
+    <string name="stat_armes_legeres">Nb de personnes ayant répondu armes légères :</string>
+    <string name="stat_chars">Nb de personnes ayant répondu chars :</string>
+    <string name="stat_avions">Nb de personnes ayant répondu avions :</string>
+</resources>
