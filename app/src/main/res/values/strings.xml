@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Quizz Amnesty</string>
     <string name="logo_description">Logo Amnesty</string>
-    <string name="first_question">Quels est aujourd\'hui le type d\'armes le plus meurtrier ?</string>
+    <string name="first_question">Quels sont les trois plus gros vendeurs d\'armes mondiaux ?</string>
     <string name="arme_legere">Les armes légères</string>
     <string name="chars">Chars</string>
     <string name="avions">Avions</string>

@@ -4,7 +4,12 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorBlack">#000000</color>
-    <color name="colorYellow">#ffff01</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorYellow">#feed01</color>
     <color name="colorSubmit">#67eb34</color>
     <color name="colorPressed">#2f8722</color>
+    <color name="colorUsa">#fcde62</color>
+    <color name="colorRussia">#dddddd</color>
+    <color name="colorFrance">#eeae6e</color>
+    <color name="colorRed">#c4041a</color>
 </resources>

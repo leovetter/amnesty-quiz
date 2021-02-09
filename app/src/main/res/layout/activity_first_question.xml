@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.GridLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlack"
-    android:columnCount="1"
+    android:orientation="vertical"
     tools:context=".`FirstQuestionActivity.java`">
 
     <TextView
@@ -17,45 +17,133 @@
         android:textColor="@color/colorYellow"
         android:layout_marginTop="20dp"/>
 
-    <Button
-        android:id="@+id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/arme_legere"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/button"
-        android:layout_gravity="center_horizontal"
-        android:onClick="setButtonSelected"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible"/>
 
-    <Button
-        android:id="@+id/button_2"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/chars"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/podium"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/russiaResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_alignLeft="@+id/podium"
+                android:textColor="@color/colorSubmit"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerRussia"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:paddingLeft="2dp"
+                android:background="@drawable/spinner_russia"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usaResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorSubmit"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerUsa"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:paddingLeft="2dp"
+                android:background="@drawable/spinner_usa"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/podium"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/franceResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorSubmit"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerFrance"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:paddingLeft="2dp"
+                android:background="@drawable/spinner_france"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/podium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/podium"
+            android:layout_marginTop="45dp"
+            android:contentDescription="@string/logo_description"
+            android:scaleType="centerInside"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible"/>
+
+    <com.amnesty.quizzamnesty.views.SubmitArrowView
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
         android:layout_gravity="center_horizontal"
-        android:onClick="setButtonSelected"
+        android:onClick="validate"
         />
 
-    <Button
-        android:id="@+id/button_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/avions"
-        android:background="@drawable/button"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:onClick="setButtonSelected"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible"/>
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submit"
-        android:background="@color/colorSubmit"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center_horizontal"
-        android:onClick="submitQuestion"/>
-
-</android.widget.GridLayout >
+</android.widget.LinearLayout >
