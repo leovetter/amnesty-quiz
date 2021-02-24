@@ -46,6 +46,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
         SubmitArrowView submitArrowview = (SubmitArrowView) view;
         if(!this.validated) {
             submitArrowview.invalidate();
+            this.validated = true;
 
             if (!this.spinnerRussia.getSelectedItem().toString().equals("Russie")) {
 
@@ -97,6 +98,10 @@ public class FirstQuestionActivity extends AppCompatActivity {
                 border.setStroke(4, getResources().getColor(R.color.colorSubmit));
                 this.spinnerFrance.setBackground(border);
             }
+        } else {
+
+            Intent intent = new Intent(this, SecondQuestionActivity.class);
+            startActivity(intent);
         }
     }
 

@@ -8,6 +8,12 @@
     android:orientation="vertical"
     tools:context=".`FirstQuestionActivity.java`">
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible"/>
+
     <TextView
         android:id="@+id/text_view_id"
         android:layout_width="match_parent"
@@ -134,7 +140,7 @@
     <com.amnesty.quizzamnesty.views.SubmitArrowView
         android:id="@+id/submit"
         android:layout_width="150dp"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:onClick="validate"

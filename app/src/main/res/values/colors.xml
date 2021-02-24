@@ -7,9 +7,11 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorYellow">#feed01</color>
     <color name="colorSubmit">#67eb34</color>
+    <color name="fillPerson">#31a803</color>
     <color name="colorPressed">#2f8722</color>
     <color name="colorUsa">#fcde62</color>
     <color name="colorRussia">#dddddd</color>
     <color name="colorFrance">#eeae6e</color>
     <color name="colorRed">#c4041a</color>
+    <color name="colorRedGreen">#faab7a</color>
 </resources>

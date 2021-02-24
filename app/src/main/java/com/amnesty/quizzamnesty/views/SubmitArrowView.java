@@ -58,18 +58,34 @@ public class SubmitArrowView extends View {
 
     public void drawArrow() {
 
-        Log.i("drawArrow", "yes yes yes");
-
         Paint background = new Paint();
         background.setColor(getResources().getColor(R.color.colorSubmit));
-        this.myCanvas.drawRect(100, 40, getWidth() - 160, getHeight() - 40, background);
 
-        Path path = new Path();
-        path.moveTo(getWidth() - 160, 0);
-        path.lineTo(getWidth() - 160, getHeight());
-        path.lineTo(getWidth() - 100, getHeight() / 2);
-        path.close();
-        this.myCanvas.drawPath(path, background);
+        Path path1 = new Path();
+        path1.moveTo(100, 60);
+        path1.lineTo(100, 65);
+        path1.lineTo(getWidth() - 160, 65);
+        path1.lineTo(getWidth() - 160, 60);
+        path1.close();
+        this.myCanvas.drawPath(path1, background);
+
+        Path path2 = new Path();
+        path2.moveTo(100, getHeight() - 65);
+        path2.lineTo(100, getHeight() - 60);
+        path2.lineTo(getWidth() - 160, getHeight() - 60);
+        path2.lineTo(getWidth() - 160, getHeight() - 65);
+        path2.close();
+        this.myCanvas.drawPath(path2, background);
+
+        Path path3 = new Path();
+        path3.moveTo(getWidth() - 180, 0);
+        path3.lineTo(getWidth() - 180, 5);
+        path3.lineTo(getWidth() - 100, getHeight() / 2);
+        path3.lineTo(getWidth() - 180, getHeight() - 5);
+        path3.lineTo(getWidth() - 180, getHeight());
+        path3.lineTo(getWidth() - 95, getHeight() / 2);
+        path3.close();
+        this.myCanvas.drawPath(path3, background);
     }
 
     public void circleToArrow() {

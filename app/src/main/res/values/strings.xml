@@ -2,6 +2,7 @@
     <string name="app_name">Quizz Amnesty</string>
     <string name="logo_description">Logo Amnesty</string>
     <string name="first_question">Quels sont les trois plus gros vendeurs d\'armes mondiaux ?</string>
+    <string name="second_question">Sur ces dix personnes victimes de conflits armées, conbien sont civiles ?</string>
     <string name="arme_legere">Les armes légères</string>
     <string name="chars">Chars</string>
     <string name="avions">Avions</string>
@@ -11,4 +12,6 @@
     <string name="stat_armes_legeres">Nb de personnes ayant répondu armes légères :</string>
     <string name="stat_chars">Nb de personnes ayant répondu chars :</string>
     <string name="stat_avions">Nb de personnes ayant répondu avions :</string>
+    <string name="dix_neuf_cents">En 1900 :</string>
+    <string name="today">Aujourd\'hui :</string>
 </resources>
